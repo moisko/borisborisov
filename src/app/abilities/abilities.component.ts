@@ -1,0 +1,52 @@
+import {Component, OnInit} from "@angular/core";
+
+@Component({
+  selector: "abilities",
+  templateUrl: "./abilities.component.html",
+  styleUrls: ["./abilities.component.css"]
+})
+export class AbilitiesComponent implements OnInit {
+
+  private skills: Array<ISkill>;
+
+  constructor() {
+    this.skills = new Array();
+  }
+
+  ngOnInit(): void {
+    this.skills.push(new Skill("Java", 5, "PROGRAMMING_LANGUAGE"));
+    this.skills.push(new Skill("Groovy", 4, "PROGRAMMING_LANGUAGE"));
+    this.skills.push(new Skill("Javascript", 4, "PROGRAMMING_LANGUAGE"));
+    this.skills.push(new Skill("SQL", 3, "PROGRAMMING_LANGUAGE"));
+    this.skills.push(new Skill("OSGi", 5, "FRAMEWORK"));
+    this.skills.push(new Skill("JUnit", 5, "FRAMEWORK"));
+    this.skills.push(new Skill("Maven", 5, "BUILD_TOOL"));
+    this.skills.push(new Skill("Git", 5, "VERSION_CONTROL"));
+    this.skills.push(new Skill("XML", 5, "MARKUP_LANGUAGE"));
+    this.skills.push(new Skill("XSLT", 5, "MARKUP_LANGUAGE"));
+    this.skills.push(new Skill("SOA", 4, "ARCHITECTURAL_PATTERN"));
+    this.skills.push(new Skill("REST", 5, "ARCHITECTURAL_PATTERN"));
+    this.skills.push(new Skill("Apache CXF", 4, "FRAMEWORK"));
+    this.skills.push(new Skill("Spring", 4, "FRAMEWORK"));
+    this.skills.push(new Skill("jQuery", 4, "LIBRARY"));
+    this.skills.push(new Skill("Node.js", 2, "PLATFORM"));
+    this.skills.push(new Skill("Mongo", 2, "RUNTIME"));
+    this.skills.push(new Skill("React", 2, "FRAMEWORK"));
+    this.skills.push(new Skill("AngularJS", 3, "PLATFORM"));
+    this.skills.push(new Skill("Eclipse", 5, "IDE"));
+    this.skills.push(new Skill("IntellijIDEA", 5, "IDE"));
+  }
+}
+
+interface ISkill {
+  name: string;
+  rating: number;
+  category: string;
+}
+
+class Skill implements ISkill {
+  constructor(public name: string,
+              public rating: number,
+              public category: string) {
+  }
+}

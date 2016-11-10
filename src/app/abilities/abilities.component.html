@@ -1,0 +1,26 @@
+<div class="container">
+  <div class="text-align-center grey">
+    <h3>Abilities</h3>
+  </div>
+
+  <div class="text-underline">
+    <i>Skills</i>
+  </div>
+
+  <br/>
+
+  <div class="table-responsive">
+    <table class="table table-borderless">
+      <tbody>
+      <tr *ngFor="let skill of skills">
+        <td>{{skill.name}}</td>
+        <td><star [cellNumber]="1" [rating]="skill.rating"></star></td>
+        <td><star [cellNumber]="2" [rating]="skill.rating"></star></td>
+        <td><star [cellNumber]="3" [rating]="skill.rating"></star></td>
+        <td><star [cellNumber]="4" [rating]="skill.rating"></star></td>
+        <td><star [cellNumber]="5" [rating]="skill.rating"></star></td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
