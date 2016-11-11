@@ -7,16 +7,19 @@ import {Component, OnInit} from "@angular/core";
 })
 export class AbilitiesComponent implements OnInit {
 
-  private skills: Array<ISkill>;
+  readonly skills: Array<ISkill>;
+  readonly starColumns: Array<number>;
 
   constructor() {
     this.skills = new Array();
+    this.starColumns = [1, 2, 3, 4, 5];
   }
 
   ngOnInit(): void {
     this.skills.push(new Skill("Java", 5, "PROGRAMMING_LANGUAGE"));
     this.skills.push(new Skill("Groovy", 4, "PROGRAMMING_LANGUAGE"));
     this.skills.push(new Skill("Javascript", 4, "PROGRAMMING_LANGUAGE"));
+    this.skills.push(new Skill("Typescript", 3, "PROGRAMMING_LANGUAGE"));
     this.skills.push(new Skill("SQL", 3, "PROGRAMMING_LANGUAGE"));
     this.skills.push(new Skill("OSGi", 5, "FRAMEWORK"));
     this.skills.push(new Skill("JUnit", 5, "FRAMEWORK"));

@@ -6,12 +6,12 @@ import {Component, Input} from '@angular/core';
 })
 export class StarComponent {
 
-  @Input() cellNumber: number;
+  @Input() cell: number;
   @Input() rating: number;
 
   public colorStar(): string {
     let color = "black";
-    if (this.cellNumber <= this.rating) {
+    if (this.cell < this.rating) {
       color = "green";
     }
     return color;

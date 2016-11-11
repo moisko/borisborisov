@@ -14,11 +14,9 @@
       <tbody>
       <tr *ngFor="let skill of skills">
         <td>{{skill.name}}</td>
-        <td><star [cellNumber]="1" [rating]="skill.rating"></star></td>
-        <td><star [cellNumber]="2" [rating]="skill.rating"></star></td>
-        <td><star [cellNumber]="3" [rating]="skill.rating"></star></td>
-        <td><star [cellNumber]="4" [rating]="skill.rating"></star></td>
-        <td><star [cellNumber]="5" [rating]="skill.rating"></star></td>
+        <td *ngFor="let startColumn of starColumns; let i = index">
+          <star [cell]="i" [rating]="skill.rating"></star>
+        </td>
       </tr>
       </tbody>
     </table>
