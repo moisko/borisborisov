@@ -23,19 +23,20 @@ export class AbilitiesComponent implements OnInit {
     this.skills.push(new Skill("SQL", 3, "PROGRAMMING_LANGUAGE"));
     this.skills.push(new Skill("OSGi", 5, "FRAMEWORK"));
     this.skills.push(new Skill("JUnit", 5, "FRAMEWORK"));
+    this.skills.push(new Skill("Spock", 5, "FRAMEWORK"));
     this.skills.push(new Skill("Maven", 5, "BUILD_TOOL"));
+    this.skills.push(new Skill("Gradle", 3, "BUILD_TOOL"));
     this.skills.push(new Skill("Git", 5, "VERSION_CONTROL"));
     this.skills.push(new Skill("XML", 5, "MARKUP_LANGUAGE"));
     this.skills.push(new Skill("XSLT", 5, "MARKUP_LANGUAGE"));
-    this.skills.push(new Skill("SOA", 4, "ARCHITECTURAL_PATTERN"));
-    this.skills.push(new Skill("REST", 5, "ARCHITECTURAL_PATTERN"));
     this.skills.push(new Skill("Apache CXF", 4, "FRAMEWORK"));
     this.skills.push(new Skill("Spring", 4, "FRAMEWORK"));
     this.skills.push(new Skill("jQuery", 4, "LIBRARY"));
     this.skills.push(new Skill("Node.js", 2, "PLATFORM"));
-    this.skills.push(new Skill("Mongo", 2, "RUNTIME"));
-    this.skills.push(new Skill("React", 2, "FRAMEWORK"));
+    this.skills.push(new Skill("MySQL", 3, "DATABASE"));
+    this.skills.push(new Skill("Mongo", 3, "DATABASE"));
     this.skills.push(new Skill("AngularJS", 3, "PLATFORM"));
+    this.skills.push(new Skill("React", 2, "LIBRARY"));
     this.skills.push(new Skill("Eclipse", 5, "IDE"));
     this.skills.push(new Skill("IntellijIDEA", 5, "IDE"));
   }
@@ -48,6 +49,7 @@ interface ISkill {
 }
 
 class Skill implements ISkill {
+
   constructor(public name: string,
               public rating: number,
               public category: string) {

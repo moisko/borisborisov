@@ -10,6 +10,7 @@ import {ProjectsComponent} from "./projects/projects.component";
 import {LanguagesComponent} from "./languages/languages.component";
 import {PictureComponent} from "./picture/picture.component";
 import {StarComponent} from "./star/star.component";
+import { MeComponent } from './me/me.component';
 
 @NgModule({
   imports: [BrowserModule],
@@ -23,7 +24,8 @@ import {StarComponent} from "./star/star.component";
     ProjectsComponent,
     LanguagesComponent,
     PictureComponent,
-    StarComponent
+    StarComponent,
+    MeComponent
   ],
   bootstrap: [AppComponent]
 })

@@ -13,7 +13,7 @@
     <table class="table table-borderless">
       <tbody>
       <tr *ngFor="let skill of skills">
-        <td>{{skill.name}}</td>
+        <td><b>{{skill.name}}</b></td>
         <td *ngFor="let startColumn of starColumns; let i = index">
           <star [cell]="i" [rating]="skill.rating"></star>
         </td>
