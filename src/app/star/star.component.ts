@@ -1,19 +1,19 @@
-import {Component, Input} from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
 
 @Component({
   selector: "star",
   templateUrl: "./star.component.html"
 })
-export class StarComponent {
+export class StarComponent implements OnInit {
 
   @Input() cell: number;
   @Input() rating: number;
 
-  public colorStar(): string {
-    let color = "black";
+  public color: string = "black";
+
+  ngOnInit() {
     if (this.cell < this.rating) {
-      color = "green";
+      this.color = "green";
     }
-    return color;
   }
 }
