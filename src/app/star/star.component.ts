@@ -11,7 +11,7 @@ export class StarComponent implements OnInit {
 
   public color: string = "black";
 
-  ngOnInit() {
+  ngOnInit(): void {
     if (this.cell < this.rating) {
       this.color = "green";
     }
