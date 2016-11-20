@@ -19,20 +19,18 @@
       "prefix": "app",
       "mobile": false,
       "styles": [
-        "./styles.css",
-        "../node_modules/bootstrap/dist/css/bootstrap.min.css",
-        "../node_modules/bootstrap/dist/css/bootstrap-theme.min.css",
-        "../node_modules/font-awesome/css/font-awesome.min.css"
+        "./styles.css"
       ],
-      "scripts": [
-        "../node_modules/bootstrap/dist/js/bootstrap.min.js"
-      ],
+      "scripts": [],
       "environments": {
         "source": "environments/environment.ts",
         "dev": "environments/environment.ts",
         "prod": "environments/environment.prod.ts"
       }
     }
+  ],
+  "vendorNpmFiles": [
+    "font-awesome/**/*.+(css|css.map|otf|eot|svg|ttf|woff|woff2)"
   ],
   "addons": [],
   "packages": [],
