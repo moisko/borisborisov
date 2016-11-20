@@ -7,5 +7,9 @@ import {Component} from "@angular/core";
 })
 export class PictureComponent {
 
-  public myPictureUrl: string = "./images/boris_resized.jpg";
+  readonly myPictureUrl: string;
+
+  constructor() {
+    this.myPictureUrl = "./images/boris_resized.jpg";
+  }
 }
