@@ -43,13 +43,13 @@ export class AbilitiesComponent implements OnInit {
   }
 }
 
-interface ISkill {
+export interface ISkill {
   name: string;
   rating: number;
   category: string;
 }
 
-class Skill implements ISkill {
+export class Skill implements ISkill {
 
   constructor(public name: string,
               public rating: number,
