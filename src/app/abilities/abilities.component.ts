@@ -11,7 +11,7 @@ export class AbilitiesComponent implements OnInit {
   readonly starColumns: Array<number>;
 
   constructor() {
-    this.skills = new Array();
+    this.skills = [];
     this.starColumns = [1, 2, 3, 4, 5];
   }
 
