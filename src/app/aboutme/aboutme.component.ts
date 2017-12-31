@@ -1,8 +1,8 @@
-import {Component} from "@angular/core";
+import {Component} from '@angular/core';
 
 @Component({
-  selector: "about-me",
-  templateUrl: "./aboutme.component.html"
+  selector: 'about-me',
+  templateUrl: './aboutme.component.html'
 })
 export class AboutMeComponent {
 
