@@ -29,7 +29,7 @@ export class AbilitiesComponent implements OnInit {
     this.skills.push(new Skill('Git', 5, 'VERSION_CONTROL'));
     this.skills.push(new Skill('XML', 5, 'MARKUP_LANGUAGE'));
     this.skills.push(new Skill('XSLT', 5, 'MARKUP_LANGUAGE'));
-    this.skills.push(new Skill('Apache CXF', 4, 'FRAMEWORK'));
+    this.skills.push(new Skill('Apache CXF', 3, 'FRAMEWORK'));
     this.skills.push(new Skill('Spring', 5, 'FRAMEWORK'));
     this.skills.push(new Skill('jQuery', 4, 'LIBRARY'));
     this.skills.push(new Skill('MySQL', 3, 'DATABASE'));
