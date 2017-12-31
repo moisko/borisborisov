@@ -21,7 +21,7 @@ export class AbilitiesComponent implements OnInit {
     this.skills.push(new Skill('Javascript', 4, 'PROGRAMMING_LANGUAGE'));
     this.skills.push(new Skill('Typescript', 3, 'PROGRAMMING_LANGUAGE'));
     this.skills.push(new Skill('SQL', 3, 'PROGRAMMING_LANGUAGE'));
-    this.skills.push(new Skill('OSGi', 5, 'FRAMEWORK'));
+    this.skills.push(new Skill('OSGi', 4, 'FRAMEWORK'));
     this.skills.push(new Skill('JUnit', 5, 'FRAMEWORK'));
     this.skills.push(new Skill('Spock', 5, 'FRAMEWORK'));
     this.skills.push(new Skill('Maven', 5, 'BUILD_TOOL'));
@@ -30,10 +30,10 @@ export class AbilitiesComponent implements OnInit {
     this.skills.push(new Skill('XML', 5, 'MARKUP_LANGUAGE'));
     this.skills.push(new Skill('XSLT', 5, 'MARKUP_LANGUAGE'));
     this.skills.push(new Skill('Apache CXF', 4, 'FRAMEWORK'));
-    this.skills.push(new Skill('Spring', 4, 'FRAMEWORK'));
+    this.skills.push(new Skill('Spring', 5, 'FRAMEWORK'));
     this.skills.push(new Skill('jQuery', 4, 'LIBRARY'));
     this.skills.push(new Skill('MySQL', 3, 'DATABASE'));
-    this.skills.push(new Skill('Mongo', 3, 'DATABASE'));
+    this.skills.push(new Skill('Mongo', 4, 'DATABASE'));
     this.skills.push(new Skill('Angular', 3, 'PLATFORM'));
     this.skills.push(new Skill('React', 3, 'LIBRARY'));
     this.skills.push(new Skill('Eclipse', 5, 'IDE'));
