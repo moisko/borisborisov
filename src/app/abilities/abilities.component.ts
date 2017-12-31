@@ -34,8 +34,8 @@ export class AbilitiesComponent implements OnInit {
     this.skills.push(new Skill("jQuery", 4, "LIBRARY"));
     this.skills.push(new Skill("MySQL", 3, "DATABASE"));
     this.skills.push(new Skill("Mongo", 3, "DATABASE"));
-    this.skills.push(new Skill("AngularJS", 3, "PLATFORM"));
-    this.skills.push(new Skill("React", 2, "LIBRARY"));
+    this.skills.push(new Skill("Angular", 3, "PLATFORM"));
+    this.skills.push(new Skill("React", 3, "LIBRARY"));
     this.skills.push(new Skill("Eclipse", 5, "IDE"));
     this.skills.push(new Skill("IntellijIDEA", 5, "IDE"));
   }
