@@ -31,7 +31,6 @@ export class AbilitiesComponent implements OnInit {
     this.skills.push(new Skill('XSLT', 5, 'MARKUP_LANGUAGE'));
     this.skills.push(new Skill('Apache CXF', 3, 'FRAMEWORK'));
     this.skills.push(new Skill('Spring', 5, 'FRAMEWORK'));
-    this.skills.push(new Skill('jQuery', 4, 'LIBRARY'));
     this.skills.push(new Skill('MySQL', 3, 'DATABASE'));
     this.skills.push(new Skill('Mongo', 4, 'DATABASE'));
     this.skills.push(new Skill('Angular', 3, 'PLATFORM'));
